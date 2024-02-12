@@ -439,7 +439,7 @@ namespace MartinHuiLoanApplicationApi.Test.Controllers
 
 
         [Test]
-        public async Task PostPrequalification_InvalidAnnualIncom_LessThanZero()
+        public async Task PostPrequalification_InvalidAnnualIncome_LessThanZero()
         {
             Trace.Listeners.Add(new ConsoleTraceListener());
 
@@ -477,7 +477,7 @@ namespace MartinHuiLoanApplicationApi.Test.Controllers
 
 
         [Test]
-        public async Task PostPrequalification_InvalidAnnualIncom_LessOverMaximum()
+        public async Task PostPrequalification_InvalidAnnualIncome_OverMaximum()
         {
             Trace.Listeners.Add(new ConsoleTraceListener());
 
