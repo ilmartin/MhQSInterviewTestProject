@@ -1,0 +1,3 @@
+[submodule ".\\MartinHuiLoanApplicationApi\\"]
+	path = .\\MartinHuiLoanApplicationApi\\
+	url = https://github.com/ilmartin/MHInterviewTestAtQS.git
