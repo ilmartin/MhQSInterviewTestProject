@@ -24,7 +24,7 @@ Follow the instructions below to run the project
 
 Runs the following script to create a new Database and tables in SQL Server
 
-- There are SQL scripts provided in the [SQL script]https://github.com/ilmartin/MHInterviewTestAtQS/tree/master/SQL%20script folder
+- There are SQL scripts provided in the [SQL script](https://github.com/ilmartin/MHInterviewTestAtQS/tree/master/SQL%20script) folder
 - Use the [Create_Database.sql](https://github.com/ilmartin/MHInterviewTestAtQS/blob/master/SQL%20script/Create_Database.sql) script to create a new database in your Database server instance.
 - Use the [Create_ServiceAccount.sql.dist](https://github.com/ilmartin/MHInterviewTestAtQS/blob/master/SQL%20script/Create_ServiceAccount.sql.dist) script file to create a service account to let the API access to the database via the account. Please do enter a password `CREATE LOGIN ServiceAccount WITH PASSWORD = 'Enter Password';` in the code block before running. The file with `.dist` extension is because, the original script with a password written is gitignored, you may want to remove the `.dist` extension before running if it is not working.
 - Use the [Create_Table_LoanProduct.sql](https://github.com/ilmartin/MHInterviewTestAtQS/blob/master/SQL%20script/Create_Table_LoanProduct.sql) script to create the LoanProduct table, that will store all the data for loan products.
