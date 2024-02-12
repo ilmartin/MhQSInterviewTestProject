@@ -52,10 +52,9 @@ Suggest to open Visual studio using the solution file at [MartinHuiLoanApplicati
 ](https://github.com/ilmartin/MHInterviewTestAtQS/blob/master/MartinHuiLoanApplicationApi.sln), this should contains both the API project and Unit test project.
 
 The API is powered by Swagger, it provides a friendly interface and demostration to call the api. The API endpoint as requested in the test is: 
-|Detail|Value|Notes|
-|-----|-----|-----|
-|*Endpoint*|`/api/Prequalification`||
-|*Sample Request Body*|```json
+- *Endpoint*: `/api/Prequalification`
+- *Sample Request Body*
+```json
 {
   "firstName": "Martin",
   "lastName": "Hui",
@@ -66,7 +65,8 @@ The API is powered by Swagger, it provides a friendly interface and demostration
   "dateOfBirth": "2000-02-12T14:23:25.514Z",
   "annualIncome": 31000
 }
-```|The provided properties are mandatory, the rest of the property in the model are optional as they are not a part of the requirment|
+```
+- The provided properties are mandatory, the rest of the property in the model are optional as they are not a part of the requirment|
 
 > The controller will validate the incoming data, then insert the new applicant in the loan aplicant table, and return a result of all qualified loan products using the encapsulated LINQ query in the [LoanProductService.cs](https://github.com/ilmartin/MHInterviewTestAtQS/blob/master/Services/LoanProductService.cs) class.
 
