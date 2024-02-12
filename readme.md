@@ -67,6 +67,24 @@ The API is powered by Swagger, it provides a friendly interface and demostration
 }
 ```
 - The provided properties are mandatory, the rest of the property in the model are optional as they are not a part of the requirment|
+- *Sample Request in CURL*
+```
+curl -X 'POST' \
+  'https://localhost:7293/api/Prequalification' \
+  -H 'accept: text/plain' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "firstName": "Martin",
+  "lastName": "Hui",
+  "address": "111 A Street",
+  "city": "Leicester",
+  "country": "gb",
+  "postalCode": "LE1 1AA",
+  "dateOfBirth": "2000-02-12T14:23:25.514Z",
+  "annualIncome": 31000
+}'
+```
+
 
 > The controller will validate the incoming data, then insert the new applicant in the loan aplicant table, and return a result of all qualified loan products using the encapsulated LINQ query in the [LoanProductService.cs](https://github.com/ilmartin/MHInterviewTestAtQS/blob/master/Services/LoanProductService.cs) class.
 
@@ -78,7 +96,9 @@ Follow the instructions to run unit test:
 
 - If the solution did not contain the Unit Test project, please import the project to the solution from the parent folder.
 - Use Test , Run All Tests in Visual Studio, to run all test cases.
-- There are 13 test cases:
+
+There are 13 test cases:
+
 |Test case|
 |-----|
 |PostPrequalification_Ok|Test if controller returning the correct result when a valid body is given|
